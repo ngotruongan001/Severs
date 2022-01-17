@@ -6,7 +6,7 @@ const FCM = require('fcm-node')
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-var serverKey = require('./privateKey.json') //put the generated private key path here    
+var serverKey = require('./privatekey.json') //put the generated private key path here    
 
 var fcm = new FCM(serverKey);
 app.use(cors());
